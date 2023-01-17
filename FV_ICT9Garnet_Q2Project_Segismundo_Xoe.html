@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BonChon Website</title>
+<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+<body>
+	<div class="navigation">
+		<ul>
+			<li class="list">
+				<a href="FV_ICT9Garnet_Q2Project_Segismundo_Xoe.html">
+					<span class="icon"><ion-icon name="home"></ion-icon></span>
+					<span class="title">Home</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="projectmenu.html">
+					<span class="icon"><ion-icon name="paper"></ion-icon></span>
+					<span class="title">Menu</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="projectprofile.html">
+					<span class="icon"><ion-icon name="contact"></ion-icon></span>
+					<span class="title">Profile</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<table border="4" cellpadding="40" width="70%" style="text-align: center; background: #D06262" align="right">
+		<tr style="background: white; color: black">
+	 	<td> <h1 style="color: #A32949">ˏˋ°•*⁀➷ BONCHON WEBSITE</h1></td>
+	 </tr>
+	</table>
+	<br>
+	<hr>
+	<table border="4" cellpadding="20" width="70%" style="text-align: center; background: #D06262" align="right">
+		<tr style="background: white; color: grey">
+			<td> Flavoured Chicken and Seafood </td>
+			<td>Side dishes, Dessert, Drinks</td>
+		</tr>
+	</table>
+	<table border="4" cellpadding="40" width="70%" style="text-align: center; background: white; color: #D06262 " align="right">
+		<tr>
+			<td>Contact Us: </td>
+			<td>8633-1818</td>
+			<td>Metro Manila Delivery</td>
+			<td>Minimum of P300</td>
+		</tr>
+	</table>
+	<table border="1" cellpadding="10" width="70%" style="text-align: center; background: white; color: #D06262 " align="right">
+		<tr>
+			<td><a href="http://bonchon.com.ph/"><img src="bonchonlogo.png"></a></td>
+		</tr>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+	<script>
+		let list = document.querySelectorAll ('.list');
+		for (let i=0; i<list.length; i++){
+			list[i].onclick = function(){
+				let j=0;
+				while(j<list.length){
+					list[j++].className = 'list'
+				}
+				list[i].className = 'list active';
+			}
+		}
+	</script>
+</body>
+</html>

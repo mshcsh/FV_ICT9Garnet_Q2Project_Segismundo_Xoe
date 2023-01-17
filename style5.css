@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Popppins', sans-serif;
+}
+body
+{
+	min-height: 100vh;
+	background: #FFF4EC;
+}
+.menu
+{
+	padding: 0 10px 30px;
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fit, minmax (350px,1fr));
+}
+.main-menu
+{
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: underline;
+}
+.heading
+{
+	background-color: #FFFAE2;
+	color: #CB5252;
+	margin-bottom: 30px;
+	padding: 30px 0;
+	grid-column: 1/-1;
+	text-shadow: transparent;
+	text-decoration: overline;
+	text-transform: uppercase;
+	text-align: center;
+}
+.heading>h1{
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+.heading>h3
+{
+	font-weight: 600;
+	font-size: 22px;
+	letter-spacing: 5px;
+}
+.items
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 30px 40px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+.food-items{
+	display: grid;
+	position: relative;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.food-items img
+{
+	position: relative;
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+}
+h1{
+	grid-column: 1/-1;
+	text-align: center;
+}
+.details
+{
+	padding: 20px 10px;
+	display: grid;
+	grid-template-rows: auto 1fr 50px;
+	grid-row-gap: 15px;
+}
+.details-sub
+{
+	display: grid;
+	grid-template-columns:  auto auto;
+}
+.details-sub>h5{
+	font-weight: 600;
+	font-size: 18px;
+}
+.price{
+	text-align: right;
+}
+.details>p{
+	color:  #282B28;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight:400;
+	align-self: stretch;
+}
+.details>button
+{
+	background-color: #CB5252;
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	width: 180px;
+
+}
+.navigation ul li a .icon
+{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 70px;
+	text-align: center;
+}
+.navigation ul li a .icon icon-icon
+{
+	font-size: 1.5em;
+}
